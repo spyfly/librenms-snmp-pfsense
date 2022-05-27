@@ -14,3 +14,4 @@ extend zfs /var/etc/snmp/zfs-freebsd
 
 ## Notes
 - You need to install `dhcpd-pools` or DHCP Stats won't work
+- ZFS Stats requires you to install Perl JSON Module via `cpan JSON`

@@ -1,2 +1,15 @@
 # librenms-snmp-pfsense
 LibreNMS Agent SNMP Extension Scripts for pfsense
+
+## Prequisites
+1. Install the `net-snmp` package via the package manager
+2. Install Git via the CLI `pkg install git`
+
+## Installation
+1. `cd /var/etc && git clone https://github.com/spyfly/librenms-snmp-pfsense.git snmp
+2. Add the following lines under Custom Options in the netsnmp UI: ```
+extend dhcpstats /var/etc/snmp/dhcp.py
+```
+
+## Notes
+- You need to install `dhcpd-pools` or DHCP Stats won't work

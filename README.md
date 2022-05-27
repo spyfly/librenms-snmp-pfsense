@@ -12,7 +12,7 @@ LibreNMS Agent SNMP Extension Scripts for pfsense
 extend dhcpstats /var/etc/snmp/dhcp.py
 extend zfs /var/etc/snmp/zfs-freebsd
 extend unbound /usr/local/bin/sudo /var/etc/snmp/unbound
-extend smart /usr/local/bin/sudo /etc/snmp/smart
+extend smart /usr/local/bin/sudo /var/etc/snmp/smart
 ```
 
 ## Notes

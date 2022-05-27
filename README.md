@@ -14,6 +14,7 @@ extend zfs /var/etc/snmp/zfs-freebsd
 extend unbound /usr/local/bin/sudo /var/etc/snmp/unbound
 extend smart /usr/local/bin/sudo /var/etc/snmp/smart
 extend freeradius /var/etc/snmp/freeradius.sh
+extend ntp-server /var/etc/snmp/ntp-server.sh
 ```
 
 ## Notes

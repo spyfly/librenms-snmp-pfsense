@@ -13,10 +13,12 @@ extend dhcpstats /var/etc/snmp/dhcp.py
 extend zfs /var/etc/snmp/zfs-freebsd
 extend unbound /usr/local/bin/sudo /var/etc/snmp/unbound
 extend smart /usr/local/bin/sudo /var/etc/snmp/smart
+extend freeradius /var/etc/snmp/freeradius.sh
 ```
 
 ## Notes
 - You need to install `dhcpd-pools` or DHCP Stats won't work
 - ZFS Stats requires you to install Perl JSON Module via `cpan JSON`
 - Unbound Stats require you to run `unbound-control-setup` first and install sudo via `pkg install sudo`
-- SMART Sstats require config file generation via `/var/etc/snmp/smart -g > /var/etc/snmp/smart.config`
+- SMART Stats require config file generation via `/var/etc/snmp/smart -g > /var/etc/snmp/smart.config`
+- FreeRADIUS Stats require you to [enable the stats service](https://docs.librenms.org/Extensions/Applications/#freeradius) first

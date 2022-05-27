@@ -17,3 +17,4 @@ extend unbound /usr/bin/sudo /var/etc/snmp/unbound
 ## Notes
 - You need to install `dhcpd-pools` or DHCP Stats won't work
 - ZFS Stats requires you to install Perl JSON Module via `cpan JSON`
+- Unbound Stats require you to run `unbound-control-setup` first

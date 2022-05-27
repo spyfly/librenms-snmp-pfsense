@@ -9,6 +9,7 @@ LibreNMS Agent SNMP Extension Scripts for pfsense
 1. `cd /var/etc && git clone https://github.com/spyfly/librenms-snmp-pfsense.git snmp
 2. Add the following lines under Custom Options in the netsnmp UI: ```
 extend dhcpstats /var/etc/snmp/dhcp.py
+extend zfs /var/etc/snmp/zfs-freebsd
 ```
 
 ## Notes
